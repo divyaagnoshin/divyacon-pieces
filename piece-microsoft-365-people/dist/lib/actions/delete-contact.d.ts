@@ -1,0 +1,4 @@
+export declare const deleteContact: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {
+    contactId: import("@agnocon/pieces-framework").DropdownProperty<string | undefined, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>> | import("@agnocon/pieces-framework").DropdownProperty<string | undefined, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+}>;
+//# sourceMappingURL=delete-contact.d.ts.map

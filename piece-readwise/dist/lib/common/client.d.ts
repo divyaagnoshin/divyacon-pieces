@@ -1,0 +1,76 @@
+import { HttpMethod } from '@agnocon/pieces-common';
+export declare const READWISE_BASE_URL = "https://readwise.io/api/v2";
+export interface ReadwiseRequestParams {
+    token: string;
+    method: HttpMethod;
+    endpoint: string;
+    body?: object;
+    params?: Record<string, string>;
+}
+export declare function makeReadwiseRequest<T>({ token, method, endpoint, body, params, }: ReadwiseRequestParams): Promise<T>;
+export interface ReadwiseHighlight {
+    id: number;
+    text: string;
+    note: string;
+    location: number;
+    location_type: string;
+    color: string;
+    highlighted_at: string | null;
+    created_at: string;
+    updated: string;
+    external_id: string | null;
+    end_location: number | null;
+    url: string | null;
+    book_id: number;
+    tags: {
+        id: number;
+        name: string;
+    }[];
+    readwise_url: string;
+}
+export interface ReadwiseBook {
+    id: number;
+    title: string;
+    author: string;
+    category: string;
+    source: string;
+    num_highlights: number;
+    last_highlight_at: string | null;
+    updated: string;
+    cover_image_url: string;
+    highlights_url: string;
+    source_url: string | null;
+    asin: string | null;
+    tags: {
+        id: number;
+        name: string;
+    }[];
+    document_note: string;
+}
+export interface ReadwiseCreatedSource {
+    id: number;
+    title: string;
+    author: string;
+    category: string;
+    source: string;
+    num_highlights: number;
+    last_highlight_at: string | null;
+    updated: string;
+    cover_image_url: string;
+    highlights_url: string;
+    source_url: string | null;
+    asin: string | null;
+    tags: {
+        id: number;
+        name: string;
+    }[];
+    document_note: string;
+    modified_highlights: number[];
+}
+export interface ReadwisePaginatedResponse<T> {
+    count: number;
+    next: string | null;
+    previous: string | null;
+    results: T[];
+}
+//# sourceMappingURL=client.d.ts.map

@@ -1,0 +1,2 @@
+export declare const getAccountInformation: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=get-account-information.d.ts.map

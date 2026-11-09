@@ -1,0 +1,2 @@
+export declare const telegramGetBotInfo: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=telegram-get-bot-info.d.ts.map

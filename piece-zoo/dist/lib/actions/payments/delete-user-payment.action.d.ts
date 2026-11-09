@@ -1,0 +1,2 @@
+export declare const deleteUserPaymentAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=delete-user-payment.action.d.ts.map

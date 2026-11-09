@@ -1,0 +1,24 @@
+export declare const documentDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const templateDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const templateFields: import("@agnocon/pieces-framework").DynamicProperties<false, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const folderDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, false, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const contactDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, false, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const formDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, false, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const memberDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, false, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const documentAttachmentDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+export declare const countryDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customCountryInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const stateDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customStateInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const jobTitleDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customJobTitleInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const industryDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customIndustryInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const recipientRoleDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customRecipientRoleInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const watermarkTextDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customWatermarkTextInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const tagDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+export declare const customTagInput: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+export declare const usStateDropdown: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+//# sourceMappingURL=dynamic-dropdowns.d.ts.map

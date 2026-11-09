@@ -1,0 +1,1 @@
+{"version":3,"file":"return-response-and-wait-for-next-webhook.d.ts","sourceRoot":"","sources":["../../../src/lib/actions/return-response-and-wait-for-next-webhook.ts"],"names":[],"mappings":"AAaE,aAAK,YAAY;IACf,IAAI,SAAS;IACb,GAAG,QAAQ;IACX,QAAQ,aAAa;CACtB;AAID,eAAO,MAAM,mCAAmC;;;;EAoI9C,CAAC"}

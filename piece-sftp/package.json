@@ -1,0 +1,53 @@
+{
+  "name": "@divyacon/piece-sftp",
+  "version": "0.1.0",
+  "description": "DivyaCon sftp connector",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE.MIT-AP"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "vendor": "node ../scripts/vendor-ap.mjs piece-sftp"
+  },
+  "dependencies": {
+    "@agnocon/core-utils": "0.2.0",
+    "@agnocon/piece-types": "0.3.1",
+    "@agnocon/pieces-common": "0.12.8",
+    "@agnocon/pieces-framework": "0.36.0",
+    "tslib": "2.6.2",
+    "basic-ftp": "5.3.1",
+    "dayjs": "1.11.9",
+    "ssh2": "1.16.0",
+    "ssh2-sftp-client": "9.1.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.6",
+    "typescript": "5.5.4",
+    "@types/ssh2": "1.15.5",
+    "@types/ssh2-sftp-client": "9.0.6"
+  },
+  "license": "MIT",
+  "agnocon": {
+    "originVersion": "0.5.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "keywords": [
+    "agnocon",
+    "connector"
+  ]
+}

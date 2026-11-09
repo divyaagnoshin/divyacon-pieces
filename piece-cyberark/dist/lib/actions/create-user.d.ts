@@ -1,0 +1,46 @@
+export declare const createUser: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").CustomAuthProperty<{
+    serverUrl: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    username: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    password: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+}>, {
+    username: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    userType: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    initialPassword: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    authenticationMethod: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    allowedAuthenticationMethods: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    location: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    enableUser: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    changePassOnNextLogon: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    passwordNeverExpires: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    description: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    vaultAuthorization: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    firstName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    middleName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    lastName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    homeEmail: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    businessEmail: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    homeNumber: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    businessNumber: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    cellularNumber: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    faxNumber: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    pagerNumber: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    expiryDate: import("@agnocon/pieces-framework").DateTimeProperty<false>;
+    unAuthorizedInterfaces: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    workStreet: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    workCity: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    workState: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    workZip: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    workCountry: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    street: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    state: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    zip: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    title: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    organization: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    department: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    profession: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    homePage: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    otherEmail: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=create-user.d.ts.map

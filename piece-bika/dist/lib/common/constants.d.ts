@@ -1,0 +1,28 @@
+export declare const enum BikaFieldType {
+    SINGLE_TEXT = "SINGLE_TEXT",
+    LINK = "LINK",
+    LOOKUP = "LOOKUP",
+    SINGLE_SELECT = "SINGLE_SELECT",
+    MEMBER = "MEMBER",
+    DATETIME = "DATETIME",
+    NUMBER = "NUMBER",
+    FORMULA = "FORMULA",
+    LONG_TEXT = "LONG_TEXT",
+    MULTI_SELECT = "MULTI_SELECT",
+    CURRENCY = "CURRENCY",
+    PERCENT = "PERCENT",
+    RATING = "RATING",
+    CHECKBOX = "CHECKBOX",
+    URL = "URL",
+    PHONE = "PHONE",
+    EMAIL = "EMAIL",
+    AUTONUMBER = "AUTONUMBER",
+    CREATED_BY = "CREATED_BY",
+    LAST_MODIFIED_BY = "LAST_MODIFIED_BY",
+    CASCADER = "CASCADER",
+    CREATED_TIME = "CREATED_TIME",
+    LAST_MODIFIED_TIME = "LAST_MODIFIED_TIME",
+    ATTACHMENT = "ATTACHMENT"
+}
+export declare const BikaNumericFieldTypes: BikaFieldType[];
+//# sourceMappingURL=constants.d.ts.map

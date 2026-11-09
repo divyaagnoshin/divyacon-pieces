@@ -1,0 +1,34 @@
+export declare const createProductAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {
+    user_id: import("@agnocon/pieces-framework").DropdownProperty<number, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    article_type_id: import("@agnocon/pieces-framework").StaticDropdownProperty<number, true>;
+    intern_code: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    intern_name: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    intern_description: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    contact_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    deliverer_code: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    deliverer_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    deliverer_description: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    purchase_price: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    sale_price: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    purchase_total: import("@agnocon/pieces-framework").NumberProperty<false>;
+    sale_total: import("@agnocon/pieces-framework").NumberProperty<false>;
+    currency_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>> | import("@agnocon/pieces-framework").DropdownProperty<number, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    tax_income_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    tax_expense_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    unit_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    is_stock: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    stock_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    stock_place_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    stock_nr: import("@agnocon/pieces-framework").NumberProperty<true>;
+    stock_min_nr: import("@agnocon/pieces-framework").NumberProperty<true>;
+    width: import("@agnocon/pieces-framework").NumberProperty<false>;
+    height: import("@agnocon/pieces-framework").NumberProperty<false>;
+    weight: import("@agnocon/pieces-framework").NumberProperty<false>;
+    volume: import("@agnocon/pieces-framework").NumberProperty<false>;
+    remarks: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    delivery_price: import("@agnocon/pieces-framework").NumberProperty<false>;
+    article_group_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    account_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>> | import("@agnocon/pieces-framework").DropdownProperty<number, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    expense_account_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>> | import("@agnocon/pieces-framework").DropdownProperty<number, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+}>;
+//# sourceMappingURL=create-product.d.ts.map

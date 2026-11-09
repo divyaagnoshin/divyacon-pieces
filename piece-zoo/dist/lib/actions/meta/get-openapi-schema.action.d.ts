@@ -1,0 +1,2 @@
+export declare const getOpenApiSchemaAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=get-openapi-schema.action.d.ts.map

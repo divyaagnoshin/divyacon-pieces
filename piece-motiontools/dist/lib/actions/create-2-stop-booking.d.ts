@@ -1,0 +1,37 @@
+export declare const create2stopBooking: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {
+    scheduled_at: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    payment_method: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    additional_information: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    metadata: import("@agnocon/pieces-framework").JsonProperty<false>;
+    stop1_type: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_metadata: import("@agnocon/pieces-framework").JsonProperty<false>;
+    stop1_lat: import("@agnocon/pieces-framework").NumberProperty<false>;
+    stop1_lng: import("@agnocon/pieces-framework").NumberProperty<false>;
+    stop1_street: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_zip_code: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_additional_line: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_location_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_first_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_last_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_phone_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop1_email: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_type: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_metadata: import("@agnocon/pieces-framework").JsonProperty<false>;
+    stop2_lat: import("@agnocon/pieces-framework").NumberProperty<false>;
+    stop2_lng: import("@agnocon/pieces-framework").NumberProperty<false>;
+    stop2_street: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_zip_code: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_additional_line: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_location_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_first_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_last_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_phone_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    stop2_email: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=create-2-stop-booking.d.ts.map

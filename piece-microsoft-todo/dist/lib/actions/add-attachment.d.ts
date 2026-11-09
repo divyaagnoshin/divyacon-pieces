@@ -1,0 +1,7 @@
+export declare const addAttachmentAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {
+    task_list_id: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    task_id: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    file: import("@agnocon/pieces-framework").FileProperty<true, false>;
+    filename: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=add-attachment.d.ts.map

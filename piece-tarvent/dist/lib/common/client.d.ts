@@ -1,0 +1,52 @@
+import { HttpMessageBody } from '@agnocon/pieces-common';
+import { ContactStatus, CreateAudienceGroupResponse, CreateContactNoteResponse, CreateContactResponse, CreateGroupContactResponse, CreateSuppressionFilterResponse, CreateWebhookResponse, DeleteGroupContactResponse, ListAudienceDataFieldsResponse, ListAudienceFormsResponse, ListAudienceGroupAdvResponse, ListAudienceGroupResponse, ListAudiencesAdvResponse, ListAudiencesResponse, ListCampaignLinksResponse, ListCampaignsAdvResponse, ListCampaignsResponse, ListContactResponse, ListCustomEventsAdvResponse, ListCustomEventsResponse, ListJourneysAdvResponse, ListJourneysResponse, ListLandingPagesResponse, ListSurveysResponse, ListTagsResponse, ListTemplatesResponse, ListTxGroupNamesResponse } from './types';
+export declare class TarventClient {
+    private accountId;
+    private apiKey;
+    constructor(accountId: string, apiKey: string);
+    makeRequest<T extends HttpMessageBody>(body?: unknown | undefined): Promise<T>;
+    authenticate(): Promise<unknown>;
+    createWebhook(context: any, webhookType: string): Promise<CreateWebhookResponse>;
+    deleteWebhook(webhookId: string): Promise<CreateWebhookResponse>;
+    listAudiences(): Promise<ListAudiencesResponse>;
+    listAudiencesAdv(name?: string, tags?: string, itemCount?: number): Promise<ListAudiencesAdvResponse>;
+    listAudienceGroups(audienceId: string): Promise<ListAudienceGroupResponse>;
+    listAudienceGroupsAdv(audienceId: string | undefined, name?: string): Promise<ListAudienceGroupAdvResponse>;
+    listAudienceDataFields(audienceId: unknown): Promise<ListAudienceDataFieldsResponse>;
+    listAudienceForms(audienceId: string): Promise<ListAudienceFormsResponse>;
+    listTags(): Promise<ListTagsResponse>;
+    listCampaigns(ignoreStatus?: boolean, isEvent?: boolean): Promise<ListCampaignsResponse>;
+    listCampaignsAdv(name?: string, tags?: string, status?: string): Promise<ListCampaignsAdvResponse>;
+    listCampaignLinks(campaignId: string): Promise<ListCampaignLinksResponse>;
+    listJourneys(): Promise<ListJourneysResponse>;
+    listJourneysAdv(name?: string, tags?: string, status?: string): Promise<ListJourneysAdvResponse>;
+    listContact(audienceId: string | undefined, email: string): Promise<ListContactResponse>;
+    listLandingPages(): Promise<ListLandingPagesResponse>;
+    listSurveys(): Promise<ListSurveysResponse>;
+    listTemplates(): Promise<ListTemplatesResponse>;
+    listTxGroupNames(): Promise<ListTxGroupNamesResponse>;
+    listCustomEvents(): Promise<ListCustomEventsResponse>;
+    listCustomEventsAdv(name?: string): Promise<ListCustomEventsAdvResponse>;
+    createContact(audienceId: string | undefined, emailAddress: string, updateExisting: string, groupAction: string | undefined, tagAction: string | undefined, tagIds: string[] | undefined, groupIds: string[] | undefined, firstName: string | undefined, lastName: string | undefined, streetAddress: string | undefined, streetAddress2: string | undefined, addressLocality: string | undefined, addressRegion: string | undefined, postalCode: string | undefined, addressCountry: string | undefined, profileFields: Record<string, string> | undefined): Promise<CreateContactResponse>;
+    updateContactTags(audienceId: string | undefined, contactId: string, action: string, tagIds: string[] | undefined): Promise<boolean>;
+    createAudienceGroup(audienceId: string | undefined, name: string | undefined, description: string | undefined, isPublic: string): Promise<CreateAudienceGroupResponse>;
+    sendCampaignCopy(campaignId: string | undefined): Promise<boolean>;
+    createContactNote(contactId: string | undefined, note: string | undefined): Promise<CreateContactNoteResponse>;
+    addRemoveContactGroup(action: string | undefined, contactId: string | undefined, audienceId: string | undefined, groupId: string | undefined): Promise<CreateGroupContactResponse | DeleteGroupContactResponse>;
+    addRemoveJourneyContact(action: string | undefined, contactId: string | undefined, journeyId: string | undefined): Promise<boolean>;
+    updateContactStatus(contactId: string | undefined, status: ContactStatus | undefined): Promise<boolean>;
+    generateCustomEvent(contactId: string | undefined, customEventId: string | undefined): Promise<boolean>;
+    updateJourneyStatus(action: string | undefined, journeyId: string | undefined): Promise<boolean>;
+    createSuppressionFilter(emailAddress: string, reason: string | undefined): Promise<CreateSuppressionFilterResponse>;
+    createTransaction(groupName: string | undefined, fromEmail: string, fromName: string | undefined, toEmail: string, ccEmail: unknown[] | undefined, bccEmail: unknown[] | undefined, subject: string, replyToEmail: string | undefined, replyToName: string | undefined, variables: Record<string, unknown> | undefined, templateId: string | undefined, mimeType: string | undefined, content: string | undefined, ignoreSuppressCheck: string): Promise<CreateSuppressionFilterResponse>;
+    getWebhookName(): string;
+    getWebhookEvent(type: string, parameters: any): Array<{
+        entityType: unknown;
+        eventType: string;
+    }>;
+    generateWebhookInput(type: string, parameters: any): any;
+    getHelpText(fieldName: string, dataType: string, defaultValue: string, isGdpr?: boolean): string;
+    isISODate(str: string): boolean;
+    formatISODateToYMD(isoString: string): string;
+}
+//# sourceMappingURL=client.d.ts.map

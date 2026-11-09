@@ -1,0 +1,31 @@
+export declare const updatePersonAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {
+    contact_id: import("@agnocon/pieces-framework").DropdownProperty<number, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    name_1: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    name_2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    nr: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    salutation_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    salutation_form: import("@agnocon/pieces-framework").NumberProperty<false>;
+    title_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    birthday: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    street_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    house_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    address_addition: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    postcode: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    country_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    mail: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    mail_second: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    phone_fixed: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    phone_fixed_second: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    phone_mobile: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    fax: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    url: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    skype_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    remarks: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    language_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    contact_group_ids: import("@agnocon/pieces-framework").MultiSelectDropdownProperty<string, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    contact_branch_ids: import("@agnocon/pieces-framework").MultiSelectDropdownProperty<string, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    user_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+    owner_id: import("@agnocon/pieces-framework").DropdownProperty<number, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
+}>;
+//# sourceMappingURL=update-person.d.ts.map

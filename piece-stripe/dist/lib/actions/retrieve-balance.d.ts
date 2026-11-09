@@ -1,0 +1,2 @@
+export declare const stripeRetrieveBalance: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=retrieve-balance.d.ts.map

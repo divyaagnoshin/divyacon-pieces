@@ -1,0 +1,2 @@
+export declare const comapaignIdDropdown: import("@agnocon/pieces-framework").DropdownProperty<any, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+//# sourceMappingURL=props.d.ts.map

@@ -1,0 +1,29 @@
+export declare const createLink: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {
+    url: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    domain: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    key: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    externalId: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    title: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    description: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    image: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    video: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    tags: import("@agnocon/pieces-framework").ArrayProperty<false>;
+    folderId: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    expiresAt: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    expiredUrl: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    password: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    trackConversion: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    proxy: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    rewrite: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    doIndex: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    archived: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    ios: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    android: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    comments: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    utm_source: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    utm_medium: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    utm_campaign: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    utm_term: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    utm_content: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=create-link.d.ts.map

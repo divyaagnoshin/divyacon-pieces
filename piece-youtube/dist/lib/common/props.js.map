@@ -1,0 +1,1 @@
+{"version":3,"file":"props.js","sourceRoot":"","sources":["../../../src/lib/common/props.ts"],"names":[],"mappings":";;;AAAA,8FAA8F;AAC9F,qEAAqE;AACrE,gEAAqD;AAExC,QAAA,iBAAiB,GAAG,2BAAQ,CAAC,SAAS,CAAC;IAClD,WAAW,EAAE,4BAA4B;IACzC,WAAW,EAAE,6DAA6D;IAC1E,QAAQ,EAAE,IAAI;CACf,CAAC,CAAC"}

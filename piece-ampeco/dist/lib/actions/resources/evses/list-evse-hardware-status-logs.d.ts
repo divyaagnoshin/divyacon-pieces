@@ -1,0 +1,14 @@
+/**
+ * Generated from API version: 3.96.4
+ */
+export declare const listEvseHardwareStatusLogsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").CustomAuthProperty<{
+    baseApiUrl: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    token: import("@agnocon/pieces-framework").SecretTextProperty<true>;
+}>, {
+    evse: import("@agnocon/pieces-framework").NumberProperty<true>;
+    filter__createdAfter: import("@agnocon/pieces-framework").DateTimeProperty<false>;
+    filter__createdBefore: import("@agnocon/pieces-framework").DateTimeProperty<false>;
+    per_page: import("@agnocon/pieces-framework").NumberProperty<false>;
+    usePagination: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+}>;
+//# sourceMappingURL=list-evse-hardware-status-logs.d.ts.map

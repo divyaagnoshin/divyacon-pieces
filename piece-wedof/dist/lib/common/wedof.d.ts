@@ -1,0 +1,32 @@
+export declare const wedofCommon: {
+    baseUrl: string;
+    host: string;
+    subscribeWebhook: (events: string[], webhookUrl: string, apiKey: string, name: string) => Promise<any>;
+    handleWebhookSubscription: (events: string[], context: any, name: string) => Promise<void>;
+    unsubscribeWebhook: (webhookId: string, apiKey: string) => Promise<import("@agnocon/pieces-common").HttpResponse<any>>;
+    state: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    partnershipState: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    habilitation: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    compliance: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    events: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, true>;
+    certificationEvents: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, true>;
+    forceMajeureAbsence: import("@agnocon/pieces-framework").StaticDropdownProperty<boolean, false>;
+    europeanLanguageLevel: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    gradePass: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    examinationType: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    controlState: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    certificationFolderState: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    billingState: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    type: import("@agnocon/pieces-framework").StaticMultiSelectDropdownProperty<string, false>;
+    period: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    filterOnStateDate: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    filterOnStateDateFuture: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    filterOnStateDateCf: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    filterOnStateDateFutureCf: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    sort: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    order: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    tasks: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    qualiopiIndicators: import("@agnocon/pieces-framework").StaticDropdownProperty<number, false>;
+    cdcState: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+};
+//# sourceMappingURL=wedof.d.ts.map

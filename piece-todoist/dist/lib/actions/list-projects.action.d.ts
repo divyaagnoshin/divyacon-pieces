@@ -1,0 +1,2 @@
+export declare const todoistListProjectsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
+//# sourceMappingURL=list-projects.action.d.ts.map

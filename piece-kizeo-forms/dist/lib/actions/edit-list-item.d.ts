@@ -1,0 +1,7 @@
+export declare const editListItem: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {
+    listId: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+    itemId: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    itemLabel: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    properties: import("@agnocon/pieces-framework").DynamicProperties<true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+}>;
+//# sourceMappingURL=edit-list-item.d.ts.map

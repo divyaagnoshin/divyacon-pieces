@@ -1,0 +1,2 @@
+export declare const listOperatingAccounts: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
+//# sourceMappingURL=list-operating-accounts.d.ts.map

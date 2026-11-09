@@ -1,0 +1,12 @@
+/**
+ * Generated from API version: 3.96.4
+ */
+export declare const reservationCancelAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").CustomAuthProperty<{
+    baseApiUrl: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    token: import("@agnocon/pieces-framework").SecretTextProperty<true>;
+}>, {
+    reservation: import("@agnocon/pieces-framework").NumberProperty<true>;
+    force: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    reason: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=reservation-cancel.d.ts.map

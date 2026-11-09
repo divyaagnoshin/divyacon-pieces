@@ -1,0 +1,35 @@
+export declare const refundPaymentAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {
+    reference: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    payment_id: import("@agnocon/pieces-framework").DropdownProperty<any, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+    amount: import("@agnocon/pieces-framework").NumberProperty<false>;
+    refund_reference: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    capture_action_id: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    amount_allocations: import("@agnocon/pieces-framework").ArrayProperty<true> | import("@agnocon/pieces-framework").ArrayProperty<false>;
+    items: import("@agnocon/pieces-framework").ArrayProperty<false>;
+    destination_country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    destination_account_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    destination_bank_code: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    destination_iban: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    destination_swift_bic: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_first_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_last_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_type: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    account_holder_company_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_email: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_phone_country_code: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_phone_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_address_line1: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_address_line2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_state: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_zip: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    account_holder_country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    bank_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    bank_branch: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    bank_address_line1: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    bank_address_line2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    bank_city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    bank_country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    metadata: import("@agnocon/pieces-framework").ObjectProperty<false>;
+}>;
+//# sourceMappingURL=refund-payment.d.ts.map

@@ -1,0 +1,48 @@
+export declare const createOrder: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").CustomAuthProperty<{
+    clientId: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    clientSecret: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>, {
+    environment: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    orderAmount: import("@agnocon/pieces-framework").NumberProperty<true>;
+    orderCurrency: import("@agnocon/pieces-framework").StaticDropdownProperty<string, true>;
+    customerId: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    customerPhone: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    customerEmail: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    customerName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    customerBankAccountNumber: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    customerBankIfsc: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    customerBankCode: import("@agnocon/pieces-framework").NumberProperty<false>;
+    orderId: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    orderNote: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    orderExpiryTime: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    returnUrl: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    notifyUrl: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    paymentMethods: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    cartName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    customerNote: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingCharge: import("@agnocon/pieces-framework").NumberProperty<false>;
+    shippingFullName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingCountry: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingCity: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingState: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingPincode: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingAddress1: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    shippingAddress2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingFullName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingCountry: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingCity: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingState: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingPincode: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingAddress1: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    billingAddress2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    terminalType: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    terminalId: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    terminalPhoneNo: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    terminalName: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    terminalAddress: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    terminalNote: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    oneClickCheckoutEnabled: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    verifyPayEnabled: import("@agnocon/pieces-framework").CheckboxProperty<false>;
+    orderTags: import("@agnocon/pieces-framework").LongTextProperty<false>;
+}>;
+//# sourceMappingURL=create-order.d.ts.map

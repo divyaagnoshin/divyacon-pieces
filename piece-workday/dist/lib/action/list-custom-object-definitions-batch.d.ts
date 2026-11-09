@@ -1,0 +1,2 @@
+export declare const listCustomObjectDefinitionsBatch: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
+//# sourceMappingURL=list-custom-object-definitions-batch.d.ts.map

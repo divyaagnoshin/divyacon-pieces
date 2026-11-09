@@ -1,0 +1,1 @@
+{"version":3,"file":"artist.d.ts","sourceRoot":"","sources":["../../../../src/lib/common/models/artist.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,MAAM;IACrB,EAAE,EAAE,MAAM,CAAC;IACX,IAAI,EAAE,MAAM,CAAC;IACb,IAAI,EAAE,QAAQ,CAAC;IACf,GAAG,EAAE,MAAM,CAAC;IACZ,MAAM,EAAE,MAAM,EAAE,CAAC;CAClB"}

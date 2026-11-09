@@ -1,0 +1,1 @@
+{"version":3,"file":"scrapeless-api-client.js","sourceRoot":"","sources":["../../../src/lib/services/scrapeless-api-client.ts"],"names":[],"mappings":";;AAIA,wDAKC;AATD,mHAAmH;AACnH,qEAAqE;AACrE,4CAAsD;AAEtD,SAAgB,sBAAsB,CAAC,IAAY;IACjD,OAAO,IAAI,sBAAgB,CAAC;QAC1B,MAAM,EAAE,IAAI;QACZ,OAAO,EAAE,CAAC,GAAG,EAAE,GAAG,IAAI;KACvB,CAAC,CAAC;AACL,CAAC"}

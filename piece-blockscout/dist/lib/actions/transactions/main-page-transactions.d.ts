@@ -1,0 +1,2 @@
+export declare const getMainPageTransactions: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").PieceAuthProperty, {}>;
+//# sourceMappingURL=main-page-transactions.d.ts.map

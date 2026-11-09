@@ -1,0 +1,27 @@
+import { OutputSchema } from '@agnocon/pieces-framework';
+export declare const listBotsOutputSchema: OutputSchema;
+export declare const listFoldersOutputSchema: OutputSchema;
+export declare const createFolderOutputSchema: OutputSchema;
+export declare const getFolderOutputSchema: OutputSchema;
+export declare const renameFolderOutputSchema: OutputSchema;
+export declare const createTextDocumentOutputSchema: OutputSchema;
+export declare const createDocumentFromWebpageOutputSchema: OutputSchema;
+export declare const getDocumentOutputSchema: OutputSchema;
+export declare const listDocumentsOutputSchema: OutputSchema;
+export declare const deleteDocumentOutputSchema: OutputSchema;
+export declare const uploadFileToKbOutputSchema: OutputSchema;
+export declare const createConversationAiOutputSchema: OutputSchema;
+export declare const updateConversationOutputSchema: OutputSchema;
+export declare const getConversationOutputSchema: OutputSchema;
+export declare const listConversationsOutputSchema: OutputSchema;
+export declare const deleteConversationOutputSchema: OutputSchema;
+export declare const sendMessageAiOutputSchema: OutputSchema;
+export declare const getMessageOutputSchema: OutputSchema;
+export declare const listMessagesOutputSchema: OutputSchema;
+export declare const createConversationOutputSchema: OutputSchema;
+export declare const createDocumentFromTextOutputSchema: OutputSchema;
+export declare const sendMessageOutputSchema: OutputSchema;
+export declare const uploadFileOutputSchema: OutputSchema;
+export declare const findBotOutputSchema: OutputSchema;
+export declare const findConversationOutputSchema: OutputSchema;
+//# sourceMappingURL=output-schemas.d.ts.map

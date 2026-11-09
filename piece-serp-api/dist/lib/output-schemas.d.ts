@@ -1,0 +1,23 @@
+import { OutputSchema } from '@agnocon/pieces-framework';
+export declare const searchAppleAppStoreOutputSchema: OutputSchema;
+export declare const searchDuckduckgoOutputSchema: OutputSchema;
+export declare const searchGoogleMapsOutputSchema: OutputSchema;
+export declare const searchBingOutputSchema: OutputSchema;
+export declare const searchGoogleTrendsAiOutputSchema: OutputSchema;
+export declare const searchGoogleJobsOutputSchema: OutputSchema;
+export declare const searchGoogleWebAiOutputSchema: OutputSchema;
+export declare const searchGoogleLensOutputSchema: OutputSchema;
+export declare const searchYoutubeAiOutputSchema: OutputSchema;
+export declare const searchGoogleScholarOutputSchema: OutputSchema;
+export declare const searchWalmartOutputSchema: OutputSchema;
+export declare const searchGoogleImagesOutputSchema: OutputSchema;
+export declare const searchGoogleNewsAiOutputSchema: OutputSchema;
+export declare const searchYelpOutputSchema: OutputSchema;
+export declare const searchGooglePlayOutputSchema: OutputSchema;
+export declare const searchGoogleShoppingOutputSchema: OutputSchema;
+export declare const searchGoogleLocalServicesOutputSchema: OutputSchema;
+export declare const googleSearchOutputSchema: OutputSchema;
+export declare const googleNewsSearchOutputSchema: OutputSchema;
+export declare const youtubeSearchOutputSchema: OutputSchema;
+export declare const googleTrendsSearchOutputSchema: OutputSchema;
+//# sourceMappingURL=output-schemas.d.ts.map

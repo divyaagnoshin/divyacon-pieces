@@ -1,0 +1,2 @@
+export declare const getAuthenticatedUser: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=get-authenticated-user.d.ts.map

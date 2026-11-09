@@ -1,0 +1,32 @@
+export declare const sendCards: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {
+    templateID: import("@agnocon/pieces-framework").DropdownProperty<number, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
+    fname: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    lname: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    company: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    address: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    address2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    city: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    state: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    zip: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    r_fname: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    r_lname: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    r_company: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    r_address: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    r_address2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    r_city: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    r_state: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    r_zip: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    r_country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    api_text_one: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    api_text_two: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    api_text_three: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    api_text_four: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    api_image_one: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    api_image_two: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    api_image_three: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    api_image_four: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    sender_image: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    recipient_image: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=send-cards.d.ts.map

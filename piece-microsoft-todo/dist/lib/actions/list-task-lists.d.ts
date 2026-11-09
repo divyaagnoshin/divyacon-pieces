@@ -1,0 +1,2 @@
+export declare const listTaskListsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
+//# sourceMappingURL=list-task-lists.d.ts.map

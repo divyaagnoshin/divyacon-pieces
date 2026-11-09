@@ -1,0 +1,6 @@
+export declare const enum EventTrigger {
+    BOOKING_CREATED = "BOOKING_CREATED",
+    BOOKING_RESCHEDULED = "BOOKING_RESCHEDULED",
+    BOOKING_CANCELLED = "BOOKING_CANCELLED"
+}
+//# sourceMappingURL=common.d.ts.map

@@ -1,0 +1,2 @@
+export declare const getOrgBalanceAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
+//# sourceMappingURL=get-org-balance.action.d.ts.map

@@ -1,0 +1,33 @@
+export declare const createContact: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {
+    first_name: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    last_name: import("@agnocon/pieces-framework").ShortTextProperty<true>;
+    prefix: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    middle_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    suffix: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    nickname: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    job_title: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    company_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    type: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    contact_type: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    status: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    gender: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    birth_date: import("@agnocon/pieces-framework").DateTimeProperty<false>;
+    marital_status: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    email_address: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    phone_number: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    street_line_1: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    street_line_2: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    city: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    state: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    zip_code: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    country: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    twitter_name: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+    linkedin_url: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    background_information: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    important_information: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    personal_interests: import("@agnocon/pieces-framework").LongTextProperty<false>;
+    contact_source: import("@agnocon/pieces-framework").StaticDropdownProperty<string, false>;
+    tags: import("@agnocon/pieces-framework").ArrayProperty<false>;
+    external_unique_id: import("@agnocon/pieces-framework").ShortTextProperty<false>;
+}>;
+//# sourceMappingURL=create-contact.d.ts.map

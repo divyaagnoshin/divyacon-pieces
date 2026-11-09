@@ -1,0 +1,1 @@
+{"version":3,"file":"props.d.ts","sourceRoot":"","sources":["../../../src/lib/common/props.ts"],"names":[],"mappings":"AAOA,iBAAS,gBAAgB,CAAC,EACxB,WAAW,EACX,WAAW,EACX,aAAoB,GACrB,EAAE;IACD,WAAW,EAAE,MAAM,CAAC;IACpB,WAAW,EAAE,MAAM,CAAC;IACpB,aAAa,CAAC,EAAE,OAAO,CAAC;CACzB,oIAyCA;AAED,eAAO,MAAM,YAAY;;CAExB,CAAC"}
