@@ -1,0 +1,12 @@
+export declare const setChannelTopicAction: import("@agnocon/pieces-framework").IAction<(import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props> | import("@agnocon/pieces-framework").CustomAuthProperty<{
+    botToken: import("@agnocon/pieces-framework").SecretTextProperty<true>;
+    userToken: import("@agnocon/pieces-framework").SecretTextProperty<false>;
+}>)[], {
+    info: import("@agnocon/pieces-framework/dist/lib/property/input/markdown-property").MarkDownProperty;
+    channel: import("@agnocon/pieces-framework").DropdownProperty<string, true, (import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props> | import("@agnocon/pieces-framework").CustomAuthProperty<{
+        botToken: import("@agnocon/pieces-framework").SecretTextProperty<true>;
+        userToken: import("@agnocon/pieces-framework").SecretTextProperty<false>;
+    }>)[]>;
+    topic: import("@agnocon/pieces-framework").LongTextProperty<true>;
+}>;
+//# sourceMappingURL=set-channel-topic.d.ts.map

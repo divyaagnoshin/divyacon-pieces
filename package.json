@@ -1,0 +1,15 @@
+{
+  "name": "divyacon-pieces-poc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DivyaCon POC connectors (Gmail & Slack)",
+  "workspaces": [
+    "piece-gmail",
+    "piece-slack"
+  ],
+  "scripts": {
+    "publish:gmail": "cd piece-gmail && npm publish --access public",
+    "publish:slack": "cd piece-slack && npm publish --access public",
+    "publish:all": "npm run publish:gmail && npm run publish:slack"
+  }
+}

@@ -1,0 +1,34 @@
+name: DivyaCon Connectors Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@divyacon'
+
+      - name: Publish Gmail Connector
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd piece-gmail
+          npm publish --access public || echo "Gmail already published or up to date"
+
+      - name: Publish Slack Connector
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd piece-slack
+          npm publish --access public || echo "Slack already published or up to date"
