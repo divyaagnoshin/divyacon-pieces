@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-googlechat",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DivyaCon googlechat connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

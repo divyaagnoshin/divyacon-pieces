@@ -3,7 +3,7 @@ import path from 'path';
 import { execSync } from 'child_process';
 
 const rootDir = process.cwd();
-const maxPublishCount = parseInt(process.env.BATCH_SIZE || '25', 10);
+const maxPublishCount = parseInt(process.env.BATCH_SIZE || '50', 10);
 
 console.log('====================================================');
 console.log('  DivyaCon Connectors Automated CI Fast Publisher   ');
@@ -16,7 +16,7 @@ function sleep(ms) {
 
 // Fetch all currently published @divyacon packages from npm in fast batch requests
 async function getAllPublished() {
-  const published = new Set();
+  const published = new Map();
   let from = 0;
   const size = 250;
   try {
@@ -31,7 +31,7 @@ async function getAllPublished() {
       const data = await res.json();
       for (const item of (data.objects || [])) {
         if (item.package && item.package.name && item.package.name.startsWith('@divyacon/')) {
-          published.add(item.package.name);
+          published.set(item.package.name, item.package.version);
         }
       }
       from += size;
@@ -57,11 +57,24 @@ async function run() {
   const published = await getAllPublished();
   console.log(`Currently live on npm (@divyacon): ${published.size}`);
 
-  const toPublish = allPieces.filter(piece => !published.has(`@divyacon/${piece}`));
-  console.log(`Connectors remaining to publish: ${toPublish.length}\n`);
+  const toPublish = allPieces.filter(piece => {
+    const pkgName = `@divyacon/${piece}`;
+    const pkgJsonPath = path.join(rootDir, piece, 'package.json');
+    if (!fs.existsSync(pkgJsonPath)) return false;
+    let localVer = '0.1.0';
+    try {
+      localVer = JSON.parse(fs.readFileSync(pkgJsonPath, 'utf8')).version || '0.1.0';
+    } catch (e) {}
+
+    const liveVer = published.get(pkgName);
+    if (!liveVer) return true; // Not on npm yet
+    return localVer !== liveVer; // Version updated
+  });
+
+  console.log(`Connectors remaining/pending publish: ${toPublish.length}\n`);
 
   if (toPublish.length === 0) {
-    console.log('🎉 All connectors are already published to npm under @divyacon! Nothing to do.');
+    console.log('🎉 All connectors are up to date on npm under @divyacon! Nothing to do.');
     return;
   }
 

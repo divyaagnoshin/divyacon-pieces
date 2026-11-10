@@ -1,15 +1,16 @@
 {
-  "name": "divyacon-pieces-poc",
+  "name": "divyacon-pieces",
   "version": "1.0.0",
   "private": true,
-  "description": "DivyaCon POC connectors (Gmail & Slack)",
+  "description": "DivyaCon Connectors (Google & Microsoft pieces)",
   "workspaces": [
-    "piece-gmail",
-    "piece-slack"
+    "piece-*"
   ],
   "scripts": {
-    "publish:gmail": "cd piece-gmail && npm publish --access public",
-    "publish:slack": "cd piece-slack && npm publish --access public",
-    "publish:all": "npm run publish:gmail && npm run publish:slack"
+    "check:versions": "node scripts/check-versions.mjs",
+    "bump": "node scripts/bump-version.mjs",
+    "publish:all": "node scripts/ci-publish.mjs",
+    "publish:retry": "node auto-retry-publisher.mjs",
+    "install:all": "node scripts/install-all-connectors.mjs"
   }
 }

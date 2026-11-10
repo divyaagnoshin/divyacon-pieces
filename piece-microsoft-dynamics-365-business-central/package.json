@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-dynamics-365-business-central",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DivyaCon microsoft-dynamics-365-business-central connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
