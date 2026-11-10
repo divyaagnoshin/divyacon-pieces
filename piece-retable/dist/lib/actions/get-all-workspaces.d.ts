@@ -1,2 +1,0 @@
-export declare const retableGetAllWorkspacesAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-all-workspaces.d.ts.map

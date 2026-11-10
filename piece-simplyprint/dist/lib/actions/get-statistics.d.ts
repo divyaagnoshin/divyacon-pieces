@@ -1,2 +1,0 @@
-export declare const getStatisticsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
-//# sourceMappingURL=get-statistics.d.ts.map

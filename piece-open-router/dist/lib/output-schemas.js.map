@@ -1,1 +1,0 @@
-{"version":3,"file":"output-schemas.js","sourceRoot":"","sources":["../../src/lib/output-schemas.ts"],"names":[],"mappings":";;;AAIa,QAAA,wBAAwB,GAAiB;IACpD,MAAM,EAAE;QACN;YACE,GAAG,EAAE,UAAU;YACf,KAAK,EAAE,UAAU;YACjB,KAAK,EAAE,EAAE;YACT,WAAW,EAAE,qCAAqC;SACnD;KACF;CACF,CAAC"}

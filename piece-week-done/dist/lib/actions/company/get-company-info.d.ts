@@ -1,2 +1,0 @@
-export declare const getCompanyInfoAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
-//# sourceMappingURL=get-company-info.d.ts.map

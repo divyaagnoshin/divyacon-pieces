@@ -1,2 +1,0 @@
-export declare const getOAuth2ProvidersAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-oauth2-providers.action.d.ts.map

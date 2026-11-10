@@ -1,2 +1,0 @@
-export declare const getExtendedUserAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-extended-user.action.d.ts.map

@@ -1,2 +1,0 @@
-export declare const runwayAuth: import("@agnocon/pieces-framework").SecretTextProperty<true>;
-//# sourceMappingURL=auth.d.ts.map

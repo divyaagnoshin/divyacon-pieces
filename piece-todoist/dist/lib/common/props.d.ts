@@ -1,3 +1,0 @@
-export declare const todoistProjectIdDropdown: (description: string) => import("@agnocon/pieces-framework").DropdownProperty<string, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
-export declare const todoistSectionIdDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
-//# sourceMappingURL=props.d.ts.map

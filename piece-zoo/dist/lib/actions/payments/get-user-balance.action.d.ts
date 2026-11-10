@@ -1,2 +1,0 @@
-export declare const getUserBalanceAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-user-balance.action.d.ts.map

@@ -1,2 +1,0 @@
-export declare const getUserSubscriptionAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-user-subscription.action.d.ts.map

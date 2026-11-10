@@ -1,2 +1,0 @@
-export declare const getPrivacySettingsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-privacy-settings.action.d.ts.map

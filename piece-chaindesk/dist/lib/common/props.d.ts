@@ -1,3 +1,0 @@
-export declare const agentIdDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
-export declare const datastoreIdDropdown: import("@agnocon/pieces-framework").DropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
-//# sourceMappingURL=props.d.ts.map

@@ -1,2 +1,0 @@
-export declare const todoistGetProductivityStatsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
-//# sourceMappingURL=get-productivity-stats.action.d.ts.map

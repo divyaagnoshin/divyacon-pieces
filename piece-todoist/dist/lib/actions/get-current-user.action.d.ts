@@ -1,2 +1,0 @@
-export declare const todoistGetCurrentUserAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {}>;
-//# sourceMappingURL=get-current-user.action.d.ts.map

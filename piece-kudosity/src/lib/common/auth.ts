@@ -1,7 +1,0 @@
-import { PieceAuth } from '@agnocon/pieces-framework';
-
-export const kudosityAuth = PieceAuth.SecretText({
-  displayName: 'API Key',
-  description: 'Kudosity API Key',
-  required: true,
-});

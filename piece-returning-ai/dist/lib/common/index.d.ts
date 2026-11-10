@@ -1,2 +1,0 @@
-export declare function getApiEndpoint(authToken?: string): "https://integration.returning.ai" | "http://localhost:3333" | "https://sgtr-integration.returning.ai" | "https://staging-integration.returning.ai" | "https://playground-integration.returning.ai";
-//# sourceMappingURL=index.d.ts.map

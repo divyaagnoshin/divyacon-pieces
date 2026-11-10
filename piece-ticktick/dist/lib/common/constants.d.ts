@@ -1,9 +1,0 @@
-export declare const TICKTICK_TASK_STATUS_INCOMPLETE = 0;
-export declare const TICKTICK_TASK_STATUS_COMPLETED = 2;
-export declare const TICKTICK_SUBTASK_STATUS_INCOMPLETE = 0;
-export declare const TICKTICK_SUBTASK_STATUS_COMPLETED = 1;
-export declare const TICKTICK_PRIORITY_NONE = 0;
-export declare const TICKTICK_PRIORITY_LOW = 1;
-export declare const TICKTICK_PRIORITY_MEDIUM = 3;
-export declare const TICKTICK_PRIORITY_HIGH = 5;
-//# sourceMappingURL=constants.d.ts.map

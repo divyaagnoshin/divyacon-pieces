@@ -1,2 +1,0 @@
-export declare function createOAuthHeader(accountId: string, consumerKey: string, consumerSecret: string, tokenId: string, tokenSecret: string, requestUrl: string, httpMethod: string, queryParams?: Record<string, string | number | boolean>): string;
-//# sourceMappingURL=oauth.d.ts.map

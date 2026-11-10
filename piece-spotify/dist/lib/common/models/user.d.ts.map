@@ -1,1 +1,0 @@
-{"version":3,"file":"user.d.ts","sourceRoot":"","sources":["../../../../src/lib/common/models/user.ts"],"names":[],"mappings":"AAEA,oBAAY,OAAO;IACjB,IAAI,SAAS;IACb,IAAI,SAAS;IACb,OAAO,YAAY;CACpB;AAED,MAAM,WAAW,IAAI;IACnB,EAAE,EAAE,MAAM,CAAC;IACX,KAAK,CAAC,EAAE,MAAM,CAAC;IACf,YAAY,EAAE,MAAM,CAAC;IACrB,OAAO,EAAE,OAAO,CAAC;IACjB,IAAI,EAAE,MAAM,CAAC;IACb,GAAG,EAAE,MAAM,CAAC;CACb"}

@@ -1,2 +1,0 @@
-export declare const getFliqrAccountDetails: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-account-details.d.ts.map

@@ -1,9 +1,0 @@
-import { AppConnectionValueForAuthProperty } from '@agnocon/pieces-framework';
-import type { slackAuth } from '../auth';
-export type SlackAuthValue = AppConnectionValueForAuthProperty<typeof slackAuth>;
-export declare function getBotToken(auth: SlackAuthValue): string;
-export declare function getUserToken(auth: SlackAuthValue): string | undefined;
-export declare function requireUserToken(auth: SlackAuthValue): string;
-export declare function getTeamId(auth: SlackAuthValue): Promise<string>;
-export declare function getUserId(auth: SlackAuthValue): Promise<string>;
-//# sourceMappingURL=auth-helpers.d.ts.map

@@ -1,2 +1,0 @@
-export declare const getUserPaymentAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, {}>;
-//# sourceMappingURL=get-user-payment.action.d.ts.map

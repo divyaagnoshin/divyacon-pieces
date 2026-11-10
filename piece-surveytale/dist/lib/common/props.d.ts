@@ -1,2 +1,0 @@
-export declare const surveyIdProp: import("@agnocon/pieces-framework").MultiSelectDropdownProperty<string, true, import("@agnocon/pieces-framework").SecretTextProperty<true>>;
-//# sourceMappingURL=props.d.ts.map

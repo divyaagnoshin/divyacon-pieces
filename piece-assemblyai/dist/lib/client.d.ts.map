@@ -1,1 +1,0 @@
-{"version":3,"file":"client.d.ts","sourceRoot":"","sources":["../../src/lib/client.ts"],"names":[],"mappings":"AAEA,OAAO,EACL,aAAa,EACb,kBAAkB,EACnB,MAAM,2BAA2B,CAAC;AACnC,OAAO,EAAE,UAAU,EAAE,MAAM,YAAY,CAAC;AAGxC,eAAO,MAAM,OAAO,+BAA+B,CAAC;AAIpD,eAAO,MAAM,mBAAmB,YACrB,aAAa,CAAC,kBAAkB,CAAC,IAAI,CAAC,CAAC,KAC/C,UAYF,CAAC"}

@@ -1,2 +1,0 @@
-export declare const uploadAFile: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").SecretTextProperty<true>, import("@agnocon/pieces-framework").InputPropertyMap>;
-//# sourceMappingURL=upload-a-file.d.ts.map

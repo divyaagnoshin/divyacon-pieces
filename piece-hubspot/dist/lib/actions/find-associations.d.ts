@@ -1,6 +1,0 @@
-export declare const findAssociationsAction: import("@agnocon/pieces-framework").IAction<import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>, {
-    fromObjectId: import("@agnocon/pieces-framework").ShortTextProperty<true>;
-    fromObjectType: import("@agnocon/pieces-framework").DropdownProperty<string | undefined, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>> | import("@agnocon/pieces-framework").DropdownProperty<string | undefined, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
-    toObjectType: import("@agnocon/pieces-framework").DropdownProperty<string | undefined, true, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>> | import("@agnocon/pieces-framework").DropdownProperty<string | undefined, false, import("@agnocon/pieces-framework").OAuth2Property<import("@agnocon/pieces-framework").OAuth2Props>>;
-}>;
-//# sourceMappingURL=find-associations.d.ts.map
