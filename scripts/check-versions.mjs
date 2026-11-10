@@ -8,23 +8,23 @@ import path from 'path';
 
 const rootDir = process.cwd();
 
-async function getLiveVersions() {
+async function getLiveVersions(pieces) {
   const versions = new Map();
-  let from = 0;
-  const size = 250;
-  while (true) {
-    const res = await fetch(`https://registry.npmjs.org/-/v1/search?text=@divyacon&size=${size}&from=${from}`, {
-      headers: { 'User-Agent': 'divyacon-version-checker' }
-    });
-    if (!res.ok) break;
-    const data = await res.json();
-    for (const obj of (data.objects || [])) {
-      if (obj.package?.name?.startsWith('@divyacon/')) {
-        versions.set(obj.package.name, obj.package.version);
-      }
-    }
-    from += size;
-    if (from >= (data.total || 0) || (data.objects || []).length === 0) break;
+  // Fetch latest version tags concurrently in chunks of 10
+  const chunkSize = 10;
+  for (let i = 0; i < pieces.length; i += chunkSize) {
+    const chunk = pieces.slice(i, i + chunkSize);
+    await Promise.all(chunk.map(async (piece) => {
+      const pkgName = `@divyacon/${piece}`;
+      try {
+        const res = await fetch(`https://registry.npmjs.org/${encodeURIComponent(pkgName)}`);
+        if (res.ok) {
+          const data = await res.json();
+          const latest = data['dist-tags']?.latest || Object.keys(data.versions || {}).pop();
+          if (latest) versions.set(pkgName, latest);
+        }
+      } catch (e) {}
+    }));
   }
   return versions;
 }
@@ -34,10 +34,11 @@ async function main() {
   console.log('  DivyaCon Connectors Version Status Check          ');
   console.log('====================================================\n');
 
-  const liveVersions = await getLiveVersions();
   const pieces = fs.readdirSync(rootDir)
     .filter(name => name.startsWith('piece-') && fs.statSync(path.join(rootDir, name)).isDirectory())
     .sort();
+
+  const liveVersions = await getLiveVersions(pieces);
 
   const report = [];
   let upToDate = 0;
