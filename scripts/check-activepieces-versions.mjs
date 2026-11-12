@@ -24,12 +24,7 @@ console.log('====================================================');
 console.log('  DivyaCon — Activepieces Version Sync Checker      ');
 console.log('====================================================\n');
 
-/** Bump a semver patch version: 0.1.1 → 0.1.2 */
-function bumpPatch(version) {
-  const parts = version.split('.').map(Number);
-  parts[2] = (parts[2] || 0) + 1;
-  return parts.join('.');
-}
+// No patch bump needed — we mirror the Activepieces version directly
 
 /** Fetch the latest published version of an npm package */
 async function getLatestNpmVersion(pkgName) {
@@ -107,14 +102,14 @@ for (const piece of localPieces) {
   console.log(`     @activepieces latest: ${latestApVersion}  |  our originVersion: ${originVersion}  |  our version: ${localVersion}`);
 
   if (isNewer(latestApVersion, originVersion)) {
-    // Bump our package version (patch) and record new originVersion
-    const newVersion = bumpPatch(localVersion);
+    // Mirror the Activepieces version directly (e.g. AP 0.18.6 → @divyacon version 0.18.6)
+    const newVersion = latestApVersion;
     pkg.version = newVersion;
     pkg.agnocon = { ...pkg.agnocon, originVersion: latestApVersion };
 
     fs.writeFileSync(pkgJsonPath, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
 
-    console.log(`     ✅ BUMPED: ${localVersion} → ${newVersion}  (AP: ${originVersion} → ${latestApVersion})`);
+    console.log(`     ✅ UPDATED: ${localVersion} → ${newVersion}  (mirrors AP: ${originVersion} → ${latestApVersion})`);
     bumped.push({
       piece,
       divyaconPkg: `@divyacon/${piece}`,

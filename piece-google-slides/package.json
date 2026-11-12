@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-slides",
-  "version": "0.1.2",
+  "version": "0.4.4",
   "description": "DivyaCon google-slides connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

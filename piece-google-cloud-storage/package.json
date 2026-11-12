@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-cloud-storage",
-  "version": "0.1.2",
+  "version": "0.1.8",
   "description": "DivyaCon google-cloud-storage connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

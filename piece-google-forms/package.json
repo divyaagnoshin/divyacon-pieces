@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-forms",
-  "version": "0.1.2",
+  "version": "0.8.0",
   "description": "DivyaCon google-forms connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

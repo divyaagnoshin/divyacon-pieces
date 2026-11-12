@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-my-business",
-  "version": "0.1.2",
+  "version": "0.6.1",
   "description": "DivyaCon google-my-business connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

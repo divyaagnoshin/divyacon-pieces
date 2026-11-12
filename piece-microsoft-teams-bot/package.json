@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-teams-bot",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "DivyaCon microsoft-teams-bot connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

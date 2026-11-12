@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-calendar",
-  "version": "0.1.2",
+  "version": "0.13.4",
   "description": "DivyaCon google-calendar connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-365-planner",
-  "version": "0.1.2",
+  "version": "0.4.1",
   "description": "DivyaCon microsoft-365-planner connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-docs",
-  "version": "0.1.2",
+  "version": "0.7.0",
   "description": "DivyaCon google-docs connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-sharepoint",
-  "version": "0.1.2",
+  "version": "0.5.2",
   "description": "DivyaCon microsoft-sharepoint connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

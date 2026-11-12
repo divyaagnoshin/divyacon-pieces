@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-vertexai",
-  "version": "0.1.2",
+  "version": "0.1.9",
   "description": "DivyaCon google-vertexai connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

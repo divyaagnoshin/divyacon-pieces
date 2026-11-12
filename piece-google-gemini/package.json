@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-gemini",
-  "version": "0.1.2",
+  "version": "0.5.3",
   "description": "DivyaCon google-gemini connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

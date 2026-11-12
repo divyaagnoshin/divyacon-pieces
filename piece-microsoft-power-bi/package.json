@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-power-bi",
-  "version": "0.1.2",
+  "version": "0.4.4",
   "description": "DivyaCon microsoft-power-bi connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

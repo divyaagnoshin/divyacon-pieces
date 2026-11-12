@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-search-console",
-  "version": "0.1.2",
+  "version": "0.4.3",
   "description": "DivyaCon google-search-console connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-excel-365",
-  "version": "0.1.2",
+  "version": "0.8.5",
   "description": "DivyaCon microsoft-excel-365 connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

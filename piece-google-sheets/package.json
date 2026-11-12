@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-sheets",
-  "version": "0.1.2",
+  "version": "0.20.0",
   "description": "DivyaCon google-sheets connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

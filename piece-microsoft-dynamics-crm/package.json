@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-dynamics-crm",
-  "version": "0.1.2",
+  "version": "0.4.3",
   "description": "DivyaCon microsoft-dynamics-crm connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

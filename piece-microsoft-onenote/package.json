@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-onenote",
-  "version": "0.1.2",
+  "version": "0.5.1",
   "description": "DivyaCon microsoft-onenote connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
