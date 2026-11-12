@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-calendar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-calendar connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.10.2"
+    "originVersion": "0.13.4"
   },
   "publishConfig": {
     "access": "public",

@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-vertexai",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-vertexai connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,7 +37,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.1.6"
+    "originVersion": "0.1.9"
   },
   "publishConfig": {
     "access": "public",

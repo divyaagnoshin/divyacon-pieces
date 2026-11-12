@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-forms",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-forms connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.5.7"
+    "originVersion": "0.8.0"
   },
   "publishConfig": {
     "access": "public",

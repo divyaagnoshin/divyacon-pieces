@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-gemini",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-gemini connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,7 +40,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.1.14"
+    "originVersion": "0.5.3"
   },
   "publishConfig": {
     "access": "public",

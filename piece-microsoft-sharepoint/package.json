@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-sharepoint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon microsoft-sharepoint connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.3.6"
+    "originVersion": "0.5.2"
   },
   "publishConfig": {
     "access": "public",

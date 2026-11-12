@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-search-console",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-search-console connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.2.5"
+    "originVersion": "0.4.3"
   },
   "publishConfig": {
     "access": "public",

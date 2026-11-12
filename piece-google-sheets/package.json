@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-sheets",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-sheets connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,7 +42,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.16.7"
+    "originVersion": "0.20.0"
   },
   "publishConfig": {
     "access": "public",

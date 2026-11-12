@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-dynamics-365-business-central",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon microsoft-dynamics-365-business-central connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.2.7"
+    "originVersion": "0.3.2"
   },
   "publishConfig": {
     "access": "public",

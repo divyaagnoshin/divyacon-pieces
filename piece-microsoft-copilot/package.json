@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-copilot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon microsoft-copilot connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.1.7"
+    "originVersion": "0.2.5"
   },
   "publishConfig": {
     "access": "public",

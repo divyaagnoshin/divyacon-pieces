@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-outlook-calendar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon microsoft-outlook-calendar connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.2.7"
+    "originVersion": "0.4.1"
   },
   "publishConfig": {
     "access": "public",

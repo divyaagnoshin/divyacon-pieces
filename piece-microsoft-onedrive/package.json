@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-onedrive",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon microsoft-onedrive connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -38,7 +38,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.4.4"
+    "originVersion": "0.6.2"
   },
   "publishConfig": {
     "access": "public",

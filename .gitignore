@@ -2,3 +2,4 @@ node_modules/
 installed-connectors/
 .npmrc
 *.log
+.version-check-result.json

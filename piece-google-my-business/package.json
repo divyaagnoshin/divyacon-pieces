@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-my-business",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-my-business connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.1.8"
+    "originVersion": "0.6.1"
   },
   "publishConfig": {
     "access": "public",

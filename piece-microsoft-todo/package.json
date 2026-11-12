@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-todo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon microsoft-todo connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.3.7"
+    "originVersion": "0.5.3"
   },
   "publishConfig": {
     "access": "public",

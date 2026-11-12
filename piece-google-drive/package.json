@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-drive",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DivyaCon google-drive connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -39,7 +39,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.8.2"
+    "originVersion": "0.14.0"
   },
   "publishConfig": {
     "access": "public",

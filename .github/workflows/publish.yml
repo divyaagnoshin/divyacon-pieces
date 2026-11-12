@@ -2,23 +2,88 @@ name: DivyaCon Connectors Publish
 
 on:
   schedule:
-    # Runs daily at 12:30 PM IST (07:00 AM UTC)
-    - cron: '0 7 * * *'
+    # Daily at 12:00 PM IST = 06:30 AM UTC
+    - cron: '30 6 * * *'
   workflow_dispatch:
     inputs:
       batch_size:
-        description: 'Number of new connectors to publish in this run'
+        description: 'Number of connectors to publish per run'
         required: false
         default: '25'
+      deprecate_extras:
+        description: 'Deprecate extra npm packages not in this repo (true/false)'
+        required: false
+        default: 'false'
+
   push:
     branches: [ main ]
 
 jobs:
-  publish:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 1: Check Activepieces for updated versions → bump local package.json
+  # ─────────────────────────────────────────────────────────────────────────────
+  check-and-bump:
+    name: Check Activepieces Versions & Bump
     runs-on: ubuntu-latest
+    # Only run on scheduled triggers and manual dispatch (not every push)
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    outputs:
+      has_bumps: ${{ steps.check.outputs.has_bumps }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check Activepieces versions and bump if needed
+        id: check
+        run: |
+          node scripts/check-activepieces-versions.mjs
+
+          # Read result
+          BUMPED=$(node -e "
+            const r = JSON.parse(require('fs').readFileSync('.version-check-result.json','utf8'));
+            console.log(r.bumped.length);
+          ")
+
+          echo "Bumped count: $BUMPED"
+          echo "has_bumps=$( [ '$BUMPED' -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
+
+      - name: Commit bumped versions back to repo
+        if: steps.check.outputs.has_bumps == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: bump @divyacon versions to match latest Activepieces [skip ci if no publish needed]"
+          git push
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 2: Publish updated/new connectors to npm
+  # ─────────────────────────────────────────────────────────────────────────────
+  publish:
+    name: Publish Connectors to npm
+    runs-on: ubuntu-latest
+    # On push: always run. On schedule/dispatch: run after check-and-bump
+    needs: [check-and-bump]
+    if: |
+      always() &&
+      (github.event_name == 'push' ||
+       needs.check-and-bump.outputs.has_bumps == 'true' ||
+       github.event_name == 'workflow_dispatch')
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Pull latest (may include the version bump commit from job 1)
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -33,3 +98,30 @@ jobs:
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '25' }}
         run: |
           node scripts/ci-publish.mjs
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 3: Deprecate extra npm packages (manual trigger only)
+  # ─────────────────────────────────────────────────────────────────────────────
+  deprecate-extras:
+    name: Deprecate Extra npm Packages
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' &&
+      github.event.inputs.deprecate_extras == 'true'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@divyacon'
+
+      - name: Deprecate extra packages not in this repo
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          node scripts/deprecate-extra-packages.mjs
