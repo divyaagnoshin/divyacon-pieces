@@ -14,18 +14,21 @@ on:
         description: 'Deprecate extra npm packages not in this repo (true/false)'
         required: false
         default: 'false'
-
   push:
     branches: [ main ]
 
+# Needed so the check-and-bump job can commit version changes back to main.
+permissions:
+  contents: write
+
 jobs:
   # ─────────────────────────────────────────────────────────────────────────────
-  # JOB 1: Check Activepieces for updated versions → bump local package.json
+  # JOB 1: Check Activepieces for updated versions -> bump local package.json
   # ─────────────────────────────────────────────────────────────────────────────
   check-and-bump:
     name: Check Activepieces Versions & Bump
     runs-on: ubuntu-latest
-    # Only run on scheduled triggers and manual dispatch (not every push)
+    # No need to re-check on push (push already means something changed).
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     outputs:
       has_bumps: ${{ steps.check.outputs.has_bumps }}
@@ -51,9 +54,14 @@ jobs:
             const r = JSON.parse(require('fs').readFileSync('.version-check-result.json','utf8'));
             console.log(r.bumped.length);
           ")
+          ERRORS=$(node -e "
+            const r = JSON.parse(require('fs').readFileSync('.version-check-result.json','utf8'));
+            console.log((r.fetchErrors || []).length);
+          ")
 
           echo "Bumped count: $BUMPED"
-          echo "has_bumps=$( [ '$BUMPED' -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
+          echo "Fetch errors: $ERRORS"
+          echo "has_bumps=$([ "$BUMPED" -gt 0 ] && echo 'true' || echo 'false')" >> "$GITHUB_OUTPUT"
 
       - name: Commit bumped versions back to repo
         if: steps.check.outputs.has_bumps == 'true'
@@ -61,28 +69,31 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore: bump @divyacon versions to match latest Activepieces [skip ci if no publish needed]"
-          git push
+          if git diff --cached --quiet; then
+            echo "No file changes to commit."
+          else
+            git commit -m "chore: bump @divyacon versions to match latest Activepieces"
+            git push
+          fi
 
   # ─────────────────────────────────────────────────────────────────────────────
   # JOB 2: Publish updated/new connectors to npm
   # ─────────────────────────────────────────────────────────────────────────────
+  # KEY FIX: this job always runs. Previously it only ran when job 1 said
+  # "has_bumps=true", so a missed detection silently skipped publishing.
+  # ci-publish.mjs already checks npm and publishes only versions that differ,
+  # so running it unconditionally is safe.
   publish:
     name: Publish Connectors to npm
     runs-on: ubuntu-latest
-    # On push: always run. On schedule/dispatch: run after check-and-bump
     needs: [check-and-bump]
-    if: |
-      always() &&
-      (github.event_name == 'push' ||
-       needs.check-and-bump.outputs.has_bumps == 'true' ||
-       github.event_name == 'workflow_dispatch')
+    if: always()
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          # Pull latest (may include the version bump commit from job 1)
+          # Pull latest (may include the version bump commit from job 1).
           ref: main
 
       - name: Setup Node.js
@@ -91,6 +102,12 @@ jobs:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
           scope: '@divyacon'
+
+      - name: Re-check versions in publish job
+        # Protects against a stale checkout: if job 1's bump commit has not
+        # propagated yet, this re-detects the new versions locally.
+        continue-on-error: true
+        run: node scripts/check-activepieces-versions.mjs
 
       - name: Publish DivyaCon Connectors
         env:
