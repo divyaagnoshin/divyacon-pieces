@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-18T08:31:16.102Z",
+  "runAt": "2026-11-18T15:52:58.074Z",
   "auth": {
     "ok": true,
     "user": "divyabharathi9498"
@@ -8,37 +8,13 @@
   "liveOnNpm": 33,
   "pending": [
     {
-      "piece": "piece-google-docs",
-      "version": "0.7.1",
-      "live": "0.7.0"
-    },
-    {
-      "piece": "piece-google-drive",
-      "version": "0.14.1",
-      "live": "0.14.0"
-    },
-    {
-      "piece": "piece-google-sheets",
-      "version": "0.20.2",
-      "live": "0.20.0"
-    },
-    {
-      "piece": "piece-google-tasks",
-      "version": "0.8.1",
-      "live": "0.8.0"
-    },
-    {
-      "piece": "piece-microsoft-dynamics-crm",
-      "version": "0.5.0",
-      "live": "0.4.3"
+      "piece": "piece-google-cloud-storage",
+      "version": "0.2.0",
+      "live": "0.1.8"
     }
   ],
   "published": [
-    "@divyacon/piece-google-docs",
-    "@divyacon/piece-google-drive",
-    "@divyacon/piece-google-sheets",
-    "@divyacon/piece-google-tasks",
-    "@divyacon/piece-microsoft-dynamics-crm"
+    "@divyacon/piece-google-cloud-storage"
   ],
   "failures": [],
   "rateLimited": false,
