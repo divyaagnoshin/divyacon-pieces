@@ -109,6 +109,11 @@ jobs:
         continue-on-error: true
         run: node scripts/check-activepieces-versions.mjs
 
+      - name: Vendor real Activepieces source (features + fixes)
+        # Replaces each piece's code with the actual upstream npm bundle for
+        # the matching version — not just a version-number bump.
+        run: node scripts/vendor-ap.mjs
+
       - name: Publish DivyaCon Connectors
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

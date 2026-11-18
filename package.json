@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "check:versions": "node scripts/check-versions.mjs",
+    "vendor": "node scripts/vendor-ap.mjs",
     "bump": "node scripts/bump-version.mjs",
     "publish:all": "node scripts/ci-publish.mjs",
     "publish:retry": "node auto-retry-publisher.mjs",
