@@ -187,19 +187,23 @@ async function run() {
       await sleep(3000);
     } catch (err) {
       const output = redact((err.stdout || '') + '\n' + (err.stderr || '') + '\n' + (err.message || ''));
-      const firstLine = output.split('\n').map((l) => l.trim()).filter(Boolean)[0] || 'Unknown error';
+      const lines = output.split('\n').map((l) => l.trim()).filter(Boolean);
+      const useful = lines.filter((l) => /error|E[0-9]{3}|forbidden|denied|otp|2fa|token|permission/i.test(l) && !/^npm notice/.test(l));
+      const firstLine = useful[0] || lines.find((l) => !/^npm notice/.test(l)) || 'Unknown error';
+      const fullError = (useful.length ? useful : lines).slice(0, 12).join(' | ');
 
       if (output.includes('429') || output.toLowerCase().includes('rate limited')) {
         console.warn('\n[NPM RATE LIMIT REACHED] Stopping this run cleanly.');
         report.rateLimited = true;
         writeReport();
         break;
-      } else if (output.includes('previously published') || output.includes('cannot publish over') || output.includes('E403')) {
+      } else if (output.includes('previously published') || output.includes('cannot publish over')) {
         console.log(`    SKIPPED: already published on npm.`);
         report.failures.push({ package: pkgName, error: firstLine, kind: 'already-published' });
       } else {
         console.error(`    FAILED: ${firstLine}`);
-        report.failures.push({ package: pkgName, error: firstLine, kind: 'error' });
+        console.error(fullError);
+        report.failures.push({ package: pkgName, error: firstLine, detail: fullError, kind: 'error' });
         process.exitCode = 1;
       }
     }
