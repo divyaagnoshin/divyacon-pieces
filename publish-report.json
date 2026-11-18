@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-18T08:23:12.038Z",
+  "runAt": "2026-11-18T08:26:20.394Z",
   "auth": {
     "ok": true,
     "user": "divyabharathi9498"
@@ -7,16 +7,6 @@
   "totalLocal": 33,
   "liveOnNpm": 33,
   "pending": [
-    {
-      "piece": "piece-gmail",
-      "version": "0.19.0",
-      "live": "0.18.6"
-    },
-    {
-      "piece": "piece-google-calendar",
-      "version": "0.14.0",
-      "live": "0.13.4"
-    },
     {
       "piece": "piece-google-docs",
       "version": "0.7.1",
@@ -43,16 +33,36 @@
       "live": "0.4.3"
     }
   ],
-  "published": [
-    "@divyacon/piece-gmail",
-    "@divyacon/piece-google-calendar",
-    "@divyacon/piece-google-docs",
-    "@divyacon/piece-google-drive",
-    "@divyacon/piece-google-sheets",
-    "@divyacon/piece-google-tasks",
-    "@divyacon/piece-microsoft-dynamics-crm"
+  "published": [],
+  "failures": [
+    {
+      "package": "@divyacon/piece-google-docs",
+      "error": "npm error code E403",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-drive",
+      "error": "npm error code E409",
+      "detail": "npm error code E409 | npm error 409 Conflict - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-drive - Cannot publish over previously staged version \"0.14.1\". | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_26_22_972Z-debug-0.log | npm error code E409 | npm error 409 Conflict - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-drive - Cannot publish over previously staged version \"0.14.1\". | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_26_22_972Z-debug-0.log",
+      "kind": "error"
+    },
+    {
+      "package": "@divyacon/piece-google-sheets",
+      "error": "npm error code E403",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-tasks",
+      "error": "npm error code E409",
+      "detail": "npm error code E409 | npm error 409 Conflict - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-tasks - Cannot publish over previously staged version \"0.8.1\". | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_26_26_602Z-debug-0.log | npm error code E409 | npm error 409 Conflict - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-tasks - Cannot publish over previously staged version \"0.8.1\". | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_26_26_602Z-debug-0.log",
+      "kind": "error"
+    },
+    {
+      "package": "@divyacon/piece-microsoft-dynamics-crm",
+      "error": "npm error code E403",
+      "kind": "already-published"
+    }
   ],
-  "failures": [],
   "rateLimited": false,
   "fatal": null
 }
