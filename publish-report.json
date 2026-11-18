@@ -1,14 +1,86 @@
 {
-  "runAt": "2026-11-18T08:07:53.413Z",
+  "runAt": "2026-11-18T08:14:32.912Z",
   "auth": {
-    "ok": false,
-    "error": "npm error code E401"
+    "ok": true,
+    "user": "divyabharathi9498"
   },
   "totalLocal": 33,
-  "liveOnNpm": 0,
-  "pending": [],
+  "liveOnNpm": 33,
+  "pending": [
+    {
+      "piece": "piece-gmail",
+      "version": "0.19.0",
+      "live": "0.18.6"
+    },
+    {
+      "piece": "piece-google-calendar",
+      "version": "0.14.0",
+      "live": "0.13.4"
+    },
+    {
+      "piece": "piece-google-docs",
+      "version": "0.7.1",
+      "live": "0.7.0"
+    },
+    {
+      "piece": "piece-google-drive",
+      "version": "0.14.1",
+      "live": "0.14.0"
+    },
+    {
+      "piece": "piece-google-sheets",
+      "version": "0.20.2",
+      "live": "0.20.0"
+    },
+    {
+      "piece": "piece-google-tasks",
+      "version": "0.8.1",
+      "live": "0.8.0"
+    },
+    {
+      "piece": "piece-microsoft-dynamics-crm",
+      "version": "0.5.0",
+      "live": "0.4.3"
+    }
+  ],
   "published": [],
-  "failures": [],
+  "failures": [
+    {
+      "package": "@divyacon/piece-gmail",
+      "error": "npm notice",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-calendar",
+      "error": "npm notice",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-docs",
+      "error": "npm notice",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-drive",
+      "error": "npm notice",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-sheets",
+      "error": "npm notice",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-google-tasks",
+      "error": "npm notice",
+      "kind": "already-published"
+    },
+    {
+      "package": "@divyacon/piece-microsoft-dynamics-crm",
+      "error": "npm notice",
+      "kind": "already-published"
+    }
+  ],
   "rateLimited": false,
-  "fatal": "npm authentication failed — update the NPM_TOKEN GitHub secret"
+  "fatal": null
 }
