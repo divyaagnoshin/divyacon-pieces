@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-dynamics-crm",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "DivyaCon microsoft-dynamics-crm connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.4.3"
+    "originVersion": "0.5.0"
   },
   "publishConfig": {
     "access": "public",

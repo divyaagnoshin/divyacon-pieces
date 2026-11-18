@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-google-tasks",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "DivyaCon google-tasks connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.8.0"
+    "originVersion": "0.8.1"
   },
   "publishConfig": {
     "access": "public",
