@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-18T08:17:19.527Z",
+  "runAt": "2026-11-18T08:18:15.713Z",
   "auth": {
     "ok": true,
     "user": "divyabharathi9498"
@@ -47,38 +47,45 @@
   "failures": [
     {
       "package": "@divyacon/piece-gmail",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-gmail - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_16_417Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-gmail - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_16_417Z-debug-0.log",
+      "kind": "error"
     },
     {
       "package": "@divyacon/piece-google-calendar",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-calendar - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_17_106Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-calendar - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_17_106Z-debug-0.log",
+      "kind": "error"
     },
     {
       "package": "@divyacon/piece-google-docs",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-docs - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_17_877Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-docs - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_17_877Z-debug-0.log",
+      "kind": "error"
     },
     {
       "package": "@divyacon/piece-google-drive",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-drive - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_18_430Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-drive - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_18_430Z-debug-0.log",
+      "kind": "error"
     },
     {
       "package": "@divyacon/piece-google-sheets",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-sheets - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_18_967Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-sheets - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_18_967Z-debug-0.log",
+      "kind": "error"
     },
     {
       "package": "@divyacon/piece-google-tasks",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-tasks - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_19_528Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-google-tasks - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_19_528Z-debug-0.log",
+      "kind": "error"
     },
     {
       "package": "@divyacon/piece-microsoft-dynamics-crm",
-      "error": "npm notice",
-      "kind": "already-published"
+      "error": "npm error code E403",
+      "detail": "npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-microsoft-dynamics-crm - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_20_012Z-debug-0.log | npm error code E403 | npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@divyacon%2fpiece-microsoft-dynamics-crm - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages. | npm error 403 In most cases, you or one of your dependencies are requesting | npm error 403 a package version that is forbidden by your security policy, or | npm error 403 on a server you do not have access to. | npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-18T08_18_20_012Z-debug-0.log",
+      "kind": "error"
     }
   ],
   "rateLimited": false,
