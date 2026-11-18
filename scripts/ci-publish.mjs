@@ -186,6 +186,21 @@ async function run() {
       console.log(`    SUCCESS: ${pkgName} published!`);
       await sleep(3000);
     } catch (err) {
+      // npm can report a 403 after the version was actually published (tag/notice
+      // step). Verify against the registry before treating it as a failure.
+      let expectedVersion = null;
+      try {
+        expectedVersion = JSON.parse(fs.readFileSync(path.join(pkgDir, 'package.json'), 'utf8')).version;
+      } catch (e) {}
+      const liveVersion = expectedVersion ? await fetchPublishedVersion(pkgName) : null;
+      if (liveVersion && liveVersion === expectedVersion) {
+        publishedThisRun++;
+        report.published.push(pkgName);
+        console.log(`    SUCCESS: ${pkgName} is live on npm (v${liveVersion}).`);
+        await sleep(3000);
+        continue;
+      }
+
       const output = redact((err.stdout || '') + '\n' + (err.stderr || '') + '\n' + (err.message || ''));
       const lines = output.split('\n').map((l) => l.trim()).filter(Boolean);
       const useful = lines.filter((l) => /error|E[0-9]{3}|forbidden|denied|otp|2fa|token|permission/i.test(l) && !/^npm notice/.test(l));
