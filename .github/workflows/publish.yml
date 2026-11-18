@@ -121,6 +121,30 @@ jobs:
         run: |
           node scripts/ci-publish.mjs
 
+      - name: Upload publish report to ci-reports branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -f publish-report.json ]; then
+            echo '{"error":"no report generated"}' > publish-report.json
+          fi
+          B64=$(base64 -w0 publish-report.json)
+          API="https://api.github.com/repos/${GITHUB_REPOSITORY}"
+          SHA=$(curl -s -H "Authorization: Bearer $GH_TOKEN" "$API/git/ref/heads/main" | jq -r '.object.sha')
+          curl -s -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "$API/git/refs" -d "{\"ref\":\"refs/heads/ci-reports\",\"sha\":\"$SHA\"}" > /dev/null 2>&1 || true
+          EXISTING=$(curl -s -H "Authorization: Bearer $GH_TOKEN" "$API/contents/publish-report.json?ref=ci-reports" | jq -r '.sha // empty')
+          if [ -n "$EXISTING" ]; then
+            PAYLOAD=$(jq -n --arg m "ci report $GITHUB_RUN_ID" --arg c "$B64" --arg s "$EXISTING" \
+              '{message:$m,content:$c,branch:"ci-reports",sha:$s}')
+          else
+            PAYLOAD=$(jq -n --arg m "ci report $GITHUB_RUN_ID" --arg c "$B64" \
+              '{message:$m,content:$c,branch:"ci-reports"}')
+          fi
+          curl -s -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "$API/contents/publish-report.json" -d "$PAYLOAD" > /dev/null
+
   # ─────────────────────────────────────────────────────────────────────────────
   # JOB 3: Deprecate extra npm packages (manual trigger only)
   # ─────────────────────────────────────────────────────────────────────────────
