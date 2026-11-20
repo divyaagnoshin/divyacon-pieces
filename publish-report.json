@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-19T15:56:48.490Z",
+  "runAt": "2026-11-20T15:40:04.540Z",
   "auth": {
     "ok": true,
     "user": "divyabharathi9498"
@@ -8,19 +8,13 @@
   "liveOnNpm": 33,
   "pending": [
     {
-      "piece": "piece-microsoft-outlook",
-      "version": "0.7.8",
-      "live": "0.7.7"
-    },
-    {
-      "piece": "piece-microsoft-todo",
-      "version": "0.5.4",
-      "live": "0.5.3"
+      "piece": "piece-microsoft-excel-365",
+      "version": "0.9.0",
+      "live": "0.8.5"
     }
   ],
   "published": [
-    "@divyacon/piece-microsoft-outlook",
-    "@divyacon/piece-microsoft-todo"
+    "@divyacon/piece-microsoft-excel-365"
   ],
   "failures": [],
   "rateLimited": false,
