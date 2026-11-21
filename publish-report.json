@@ -1,21 +1,13 @@
 {
-  "runAt": "2026-11-20T15:40:04.540Z",
+  "runAt": "2026-11-21T14:50:19.108Z",
   "auth": {
     "ok": true,
     "user": "divyabharathi9498"
   },
   "totalLocal": 33,
   "liveOnNpm": 33,
-  "pending": [
-    {
-      "piece": "piece-microsoft-excel-365",
-      "version": "0.9.0",
-      "live": "0.8.5"
-    }
-  ],
-  "published": [
-    "@divyacon/piece-microsoft-excel-365"
-  ],
+  "pending": [],
+  "published": [],
   "failures": [],
   "rateLimited": false,
   "fatal": null
