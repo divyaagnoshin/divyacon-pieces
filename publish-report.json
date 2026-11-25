@@ -1,14 +1,14 @@
 {
-  "runAt": "2026-11-24T18:00:56.206Z",
+  "runAt": "2026-11-25T17:29:16.025Z",
   "auth": {
-    "ok": true,
-    "user": "divyabharathi9498"
+    "ok": false,
+    "error": "npm error code E401"
   },
   "totalLocal": 33,
-  "liveOnNpm": 33,
+  "liveOnNpm": 0,
   "pending": [],
   "published": [],
   "failures": [],
   "rateLimited": false,
-  "fatal": null
+  "fatal": "npm authentication failed — update the NPM_TOKEN GitHub secret"
 }
