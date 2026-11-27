@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-notion",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "DivyaCon notion connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.8.3"
+    "originVersion": "0.8.4"
   },
   "publishConfig": {
     "access": "public",

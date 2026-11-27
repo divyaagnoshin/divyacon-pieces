@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-microsoft-excel-365",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "DivyaCon microsoft-excel-365 connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.9.0"
+    "originVersion": "0.9.1"
   },
   "publishConfig": {
     "access": "public",

@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-gmail",
-  "version": "0.19.0",
+  "version": "0.19.1",
   "description": "DivyaCon Gmail connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -43,7 +43,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.19.0"
+    "originVersion": "0.19.1"
   },
   "publishConfig": {
     "access": "public",

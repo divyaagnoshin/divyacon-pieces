@@ -1,6 +1,6 @@
 {
   "name": "@divyacon/piece-googlechat",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "DivyaCon googlechat connector",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
   },
   "license": "MIT",
   "agnocon": {
-    "originVersion": "0.1.8"
+    "originVersion": "0.1.9"
   },
   "publishConfig": {
     "access": "public",
